@@ -36,7 +36,7 @@ namespace RedisWorker
             var sub = _redis.GetSubscriber();
             await sub.SubscribeAsync("my_channel", (channel, message) =>
             {
-                Console.WriteLine($"[Redis] Message received: {message}");
+                Console.WriteLine($"[Redis] console Message received: {message}");
             });
 
             while (!stoppingToken.IsCancellationRequested)
