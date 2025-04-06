@@ -28,7 +28,7 @@ namespace RedisWorker
 
         public RedisSubscriberService()
         {
-            _redis = ConnectionMultiplexer.Connect("redis://your-redis-url:6379");
+            _redis = ConnectionMultiplexer.Connect("red-cvm0paq4d50c73ftt2pg:6379");
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
